@@ -25,17 +25,27 @@
         v-model.trim="newItemString"
         @keyup.enter="addItem"
         type="text" 
-        placeholder="Inserisci un nuovo TO DO"
+        placeholder="Inserisci un nuovo TO-DO"
       >
 
-      <button @click="addItem">Aggiungi</button>
+      <button @click="addItem">AGGIUNGI</button>
     </div>
 
     <div>
       <span class="error">{{msgError}}</span>
+
+      <span v-html="messageCheck" class="check"></span>
+      
     </div>   
 
-    <div class="container">      
+    <div class="container">
+
+      <div v-if="items.length === 0">
+        <h2>Non ci sono cose da fare
+          <i class="fa-regular fa-face-smile-wink"></i>
+        </h2>
+        <span class="f-12">(Aggiungi un nuovo to-do dalla barra qui sopra)</span>
+      </div>
 
       <ul class="list">
         <li 
@@ -43,16 +53,13 @@
           :class="{'done' : item.done}"
           @click="item.done = !item.done"
         >
-
           <span>{{item.text}}</span>
           <i 
             class="fa-regular fa-circle-xmark"
             @click.stop="deleteItem(index)"
-
           ></i>
         </li>
       </ul>
-
     </div>
 
   </div>

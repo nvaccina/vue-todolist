@@ -24,3 +24,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 - Aggiungere la condizione che l'elemento può essere eliminato solo se done = true altrimenti mostrare messaggio di errore;
 - Inserirre un campo di input per aggiungere altri to do, e un bottone che andrà ad aggiungere il nuovo oggetto alla lista;
 - Creare una funzione che verifichi se il testo inserito nell'imput abbia almeno 5 caratteri e se vero pusharlo nella lista dei to do come primo elemento, altrimenti mostrare messaggio di errore per inserire testo più lungo;
+- Creare una funzione che dopo 2s faccia scomparire il messaggio di errore;
