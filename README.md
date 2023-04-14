@@ -19,3 +19,4 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 ## Steps
 - Creare il container dei todo e stampare i todo in pagina in base alle proprietà assegnate,
+- Dare almeno ad un item la proprietà 'sbarrato',
