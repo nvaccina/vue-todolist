@@ -20,13 +20,26 @@
 
     </div>
 
-    <div class="container">
+    <div class="input-area">
+      <input 
+        v-model.trim="newItemString"
+        @keyup.enter="addItem"
+        type="text" 
+        placeholder="Inserisci un nuovo TO DO"
+      >
 
-      <span>{{msgError}}</span>
+      <button @click="addItem">Aggiungi</button>
+    </div>
+
+    <div>
+      <span class="error">{{msgError}}</span>
+    </div>   
+
+    <div class="container">      
 
       <ul class="list">
         <li 
-          v-for="(item, indext) in items"
+          v-for="(item, index) in items"
           :class="{'done' : item.done}"
           @click="item.done = !item.done"
         >

@@ -18,7 +18,9 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 2- cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se `done` era uguale a `false`, impostare `true` e viceversa)<br>
 
 ## Steps
-- Creare il container dei todo e stampare i todo in pagina in base alle proprietà assegnate,
-- Dare almeno ad un item la proprietà 'sbarrato',
-- Creare una funzione per rimuovere l'item al click della x corrispondente,
-- Aggiungere la condizione che l'elemento può essere eliminato solo se done = true altrimenti mostrare messaggio di errore
+- Creare il container dei todo e stampare i todo in pagina in base alle proprietà assegnate;
+- Dare almeno ad un item la proprietà 'sbarrato';
+- Creare una funzione per rimuovere l'item al click della x corrispondente;
+- Aggiungere la condizione che l'elemento può essere eliminato solo se done = true altrimenti mostrare messaggio di errore;
+- Inserirre un campo di input per aggiungere altri to do, e un bottone che andrà ad aggiungere il nuovo oggetto alla lista;
+- Creare una funzione che verifichi se il testo inserito nell'imput abbia almeno 5 caratteri e se vero pusharlo nella lista dei to do come primo elemento, altrimenti mostrare messaggio di errore per inserire testo più lungo;

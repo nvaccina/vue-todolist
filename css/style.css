@@ -5,21 +5,36 @@
 }
 body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  text-align: center;
 }
 .logo{
-  text-align: center;
+  
   padding: 20px 0;
 }
 .logo img{
   width: 400px;
   height: 100px;
 }
+.input-area{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.input-area input, .input-area button{
+  padding: 10px;
+  border-radius: 15px;
+}
+.input-area input{
+  margin-right: 20px;
+  width: 300px;
+}
+.input-area button{
+  cursor: pointer;
+}
 .container{
   width: 60%;
   background-color: rgb(169, 237, 237);
   padding: 30px;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 15px;
 }
 .list li{
