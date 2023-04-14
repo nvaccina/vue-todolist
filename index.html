@@ -21,14 +21,22 @@
     </div>
 
     <div class="container">
+
+      <span>{{msgError}}</span>
+
       <ul class="list">
         <li 
-          v-for="item in items"
+          v-for="(item, indext) in items"
           :class="{'done' : item.done}"
+          @click="item.done = !item.done"
         >
 
           <span>{{item.text}}</span>
-          <i class="fa-regular fa-circle-xmark"></i>
+          <i 
+            class="fa-regular fa-circle-xmark"
+            @click.stop="deleteItem(index)"
+
+          ></i>
         </li>
       </ul>
 

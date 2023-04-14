@@ -41,3 +41,6 @@ body{
 .list li.done span{
   text-decoration: line-through;
 }
+.error{
+  color: red;
+}

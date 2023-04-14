@@ -17,8 +17,17 @@ createApp({
           text: 'Portare Marco a scuola',
           done: true,
         }
-      ]
+      ],
+      msgError: '',
     }
+  },
+
+  methods:{
+    deleteItem(index){
+      this.items.splice(index,1)
+    }
+
   }
+
 
 }).mount('#app')

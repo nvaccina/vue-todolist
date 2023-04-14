@@ -20,3 +20,5 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 ## Steps
 - Creare il container dei todo e stampare i todo in pagina in base alle proprietà assegnate,
 - Dare almeno ad un item la proprietà 'sbarrato',
+- Creare una funzione per rimuovere l'item al click della x corrispondente,
+- Aggiungere la condizione che l'elemento può essere eliminato solo se done = true altrimenti mostrare messaggio di errore
